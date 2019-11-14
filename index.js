@@ -50,7 +50,10 @@ eat(somefood);{
 if (this.stomach.length !==10);
 }
 }
-
+poop(){
+  this.stomach=[];
+}
+toString()
 
 /*
   TASK 2

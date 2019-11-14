@@ -53,7 +53,10 @@ if (this.stomach.length !==10);
 poop(){
   this.stomach=[];
 }
-toString()
+toString(){
+  return '${this.name}, ${this.age}';
+}
+}
 
 /*
   TASK 2

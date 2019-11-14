@@ -73,7 +73,18 @@ toString(){
 */
 
 class Car {
-
+  constructor(miles,milesPerGallon){
+    this.model=module;
+    this.milesPerGallon=milesPerGallon;
+    this.tank=tank;
+    this.odometer=this.odometer;
+  }
+  fill(gallons){
+    this.tank+= gallons
+  }
+  drive(distance){
+    const gallons = distance /this.milesPerGallon;
+  }
 }
 
 /*

@@ -84,6 +84,17 @@ class Car {
   }
   drive(distance){
     const gallons = distance /this.milesPerGallon;
+    const fullTankDist=this.tank *this.milesPerGallon;
+    if(fullTankDist <distance){
+      this.odometer-=fullTankDist;
+      this.tank=0;
+
+    }
+    return 'I ran out of fuel at ${this.odometer}miles'
+  }
+  else {
+    this.odometer+= distance;
+    this.tank-=gallons;
   }
 }
 
@@ -100,7 +111,15 @@ class Car {
         + {name} and {location} of course come from the instance's own properties.
 */
 class Lambdasian {
+constructor(attrs){
+  this.name=attrs.name;
+  this.age=attrs.age;
+  this.location=attrs.location
+}
+speak(){
+  return 'Hello my name is${this.name}, I am from ${location}';
 
+}
 }
 
 /*
